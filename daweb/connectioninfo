@@ -1,0 +1,7 @@
+<?php
+const CONNECTION_INFO=[ 'host'=>'127.0.0.1',
+                        'user'=>'artesano',
+                        'pwd' =>'3l4rt3s4n0', 
+                        'port'=>3307,
+                        'db'  =>'artesanias'];
+?>

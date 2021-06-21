@@ -1,0 +1,21 @@
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: auto;
+}
+
+.centrado {
+    text-align: center;
+}
+.derecho {
+    text-align: right;
+}
+.cantidades {
+    width: 50px;
+}
+.btnImages {
+    width: 10px;
+    background-color: black;
+    color: greenyellow;
+}

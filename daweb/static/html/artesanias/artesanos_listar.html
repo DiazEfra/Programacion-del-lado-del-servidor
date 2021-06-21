@@ -1,0 +1,48 @@
+<div class="mx-auto m-3 p-3">
+    <div class="card">
+        <div class="card-header bg-success">
+            <h5>Listado de Artesanos</h5>
+        </div>
+        <div class="card-body shadow rounded" >
+            <table class="table table-hover table-bordered" >
+                <caption>Pág. 1 </caption>
+                <thead class="thead-light ">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">PRIMER APELLIDO</th>
+                        <th scope="col">SEGUNDO APELLIDO</th>
+                        <th scope="col">DOMICILIO</th>
+                        <th scope="col">TELEFONO</th>
+                        <th scope="col">CORREO</th>
+                        <th scope="col" colspan="2">ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--LISTADO_ARTESANOS-->
+                    <tr>
+                        <td>{id}</td>
+                        <td>{nombres}</td>
+                        <td>{primerapellido}</td>
+                        <td>{segundoapellido}</td>
+                        <td>{domicilio}</td>
+                        <td>{telefono}</td>
+                        <td>{correo}</td>
+                        <td>
+                            <a href="/artesanias/artesanos/editar/{id}">
+                                <img src="/static/img/editar.png" width="48" alt="edit" title="Editar el elemento actual "/>
+                            </a> 
+                        </td>
+                        <td>                              
+                            <a href="/artesanias/artesanos/eliminar/{id}"
+                            onclick="return confirm( 'Esta seguro de Borrar {nombres} {primerapellido} {segundoapellido}') ">
+                                <img src="/static/img/eliminar.png" width="48" alt="delete" title="Borrar el elemento actual "/>
+                            </a> 
+                        </td>
+                    </tr>
+                    <!--LISTADO_ARTESANOS-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

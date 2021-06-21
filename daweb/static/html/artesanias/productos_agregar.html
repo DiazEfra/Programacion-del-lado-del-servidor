@@ -1,0 +1,92 @@
+<div class="mx-auto m-3 p-3">
+    <div class="card" style="width: 500px;">
+        <div class="centrado card-header bg-success" >
+            <h5>Agregar productos</h5>
+        </div>
+        <div class="card-body shadow rounded" >
+            <form action="/artesanias/productos/guardar" 
+                method="POST" enctype="multipart/form-data">
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="producto">Producto: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" 
+                        name="producto" id="producto" maxlength="100"
+                        required></input>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="descripcion">Descripción: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" 
+                        name="descripcion" id="descripcion"
+                        required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="clasificacion_id">Clasificación:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select name="clasificacion_id" id="clasificacion_id">
+                            <!--LISTADO_CLASIFICACION-->
+                            <option value="{id}">{descripcion}</option>
+                            <!--LISTADO_CLASIFICACION-->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="artesano_id">Artesano:</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select name="artesano_id" id="artesano_id">
+                            <!--LISTADO_ARTESANOS-->
+                            <option value="{id}">{nombres}</option>
+                            <!--LISTADO_ARTESANOS-->
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="precio">Precio: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" 
+                        name="precio" id="precio" value="1.00"
+                        required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="existencias">Existencias: </label>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="number" class="form-control" 
+                        name="existencias" id="existencias" value="1"
+                        required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 input-images">
+                    </div>
+                </div>
+
+                <div style="text-align: center; padding: 10px;">
+                    <input type="submit" class="btn btn-primary" value="Guardar">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<link type="text/css" rel="stylesheet" href="/static/css/image-uploader.min.css">
+<script src="/static/js/image-uploader.min.js"></script>
+<script src="/static/js/productos.js"></script>
+   
